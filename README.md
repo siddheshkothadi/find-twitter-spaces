@@ -6,7 +6,6 @@
 
 ```
 npm install -g expo-cli
-
 ```
 
 <li><p>Now, inside the cloned repository, run the following commands:</p></li>
@@ -15,21 +14,18 @@ npm install -g expo-cli
 
 ```
 yarn add expo
-
 ```
 
 <li><p>To install npm:</p></li>
 
 ```
 npm install
-
 ```
 
 <p>or you can simply try:</p>
 
 ```
 yarn
-
 ```
 
 </ul>
@@ -40,12 +36,10 @@ yarn
 
 ```
 npm run web
-
 ```
 
 <li><p>For Android:</p></li>
 
 ```
 npm run android
-
 ```
