@@ -6,37 +6,49 @@
 
 ```
 npm install -g expo-cli
-```
-<br>
-<li><p>Now, inside the cloned repository, run the following commands:</p></li>
 
-<p>To install expo locally:</p>
+```
+
+<li><p>Now, inside the cloned repository, run the following commands:</p></li>
+<ul>
+<li><p>To install expo locally:</p></li>
 
 ```
 yarn add expo
+
 ```
 
-<p>To install npm:</p>
+<li><p>To install npm:</p></li>
 
 ```
 npm install
+
 ```
 
 <p>or you can simply try:</p>
 
 ```
 yarn
+
 ```
 
-<p>And finally! To run the app, you can try:</p>
+</ul>
 
-### Web:
+<li><p>And finally! To run the app, you can try:</p></li>
+<ul>
+<li><p>For Web:</p></li>
 
 ```
 npm run web
+
 ```
 
-### Android
+<li><p>For Android:</p></li>
+
 ```
 npm run android
+
 ``
+
+</ul>
+</ul>
