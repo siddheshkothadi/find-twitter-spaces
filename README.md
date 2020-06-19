@@ -8,7 +8,8 @@
 npm install -g expo-cli
 ```
 
-<li><p>Now, inside the cloned repository, run the following commands:</p></li>
+<li><p>If you are not inside the cloned repository, run the following command:</p></li>
+<p>Now, inside the cloned repository, run the following commands:</p>
 <ul>
 <li><p>To install expo locally:</p></li>
 
