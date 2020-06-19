@@ -1,5 +1,8 @@
 # expo-react-native
-## Clone the repository and follow the steps mentioned below, to run the app.
+
+## Try the project <a href=https://siddheshkothadi.github.io/expo-react-native>here.</a>
+
+### Clone the repository and follow the steps mentioned below, to run the app.
 
 <ul>
 <li><p>Assuming that you have Node 12 LTS or greater installed, you can use npm to install the Expo CLI command line utility:</p></li>
