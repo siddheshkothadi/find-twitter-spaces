@@ -1,54 +1,29 @@
-# expo-react-native
+# Next.js + Tailwind CSS Example
 
-## Try the project <a href=https://siddheshkothadi.github.io/expo-react-native>here.</a>
+This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
 
-### Clone the repository and follow the steps mentioned below, to run the app.
+It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
 
-<ul>
-<li><p>Assuming that you have Node 12 LTS or greater installed, you can use npm to install the Expo CLI command line utility:</p></li>
+## Preview
 
-```
-npm install -g expo-cli
-```
+Preview the example live on [StackBlitz](http://stackblitz.com/):
 
-<li><p>If you are not inside the cloned repository, run the following command:</p></li>
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
 
-```
-cd expo-react-native
-```
+## Deploy your own
 
-<p>Now, inside the cloned repository, run the following commands:</p>
-<ul>
-<li><p>To install expo locally:</p></li>
+Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
 
-```
-yarn add expo
-```
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
 
-<li><p>To install npm:</p></li>
+## How to use
 
-```
-npm install
+Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+
+```bash
+npx create-next-app --example with-tailwindcss with-tailwindcss-app
+# or
+yarn create next-app --example with-tailwindcss with-tailwindcss-app
 ```
 
-<p>or you can simply try:</p>
-
-```
-yarn
-```
-
-</ul>
-
-<li><p>And finally! To run the app, you can try:</p></li>
-<ul>
-<li><p>For Web:</p></li>
-
-```
-npm run web
-```
-
-<li><p>For Android:</p></li>
-
-```
-npm run android
-```
+Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).

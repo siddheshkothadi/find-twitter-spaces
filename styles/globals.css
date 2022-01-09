@@ -1,0 +1,267 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800;900&display=swap");
+
+:root {
+  --bright-pink: #ab47bc;
+  --dark-pink: #790e8b;
+  --dark-black: rgb(25, 25, 28);
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background-color: var(--dark-black);
+  font-family: "Poppins", sans-serif;
+}
+
+input {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: default;
+}
+
+@layer utilities {
+  .buttonGradient {
+    background-image: linear-gradient(
+      to right top,
+      #9c3cf7,
+      #8c35f4,
+      #7b2df1,
+      #6727ef,
+      #5021ec,
+      #401fe1,
+      #2d1cd7,
+      #111acc,
+      #0819b8,
+      #0217a3,
+      #00158f,
+      #00137c
+    );
+  }
+
+  ::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+
+  .bgDark {
+    background-color: #19191c;
+  }
+
+  .twitterLogo {
+    fontsize: 3em;
+  }
+
+  .heading {
+    @apply text-4xl sm:text-6xl md:text-8xl lg:text-9xl px-2;
+    font-weight: 700;
+  }
+
+  .nameGradient {
+    @apply py-8 px-4 max-w-lg rounded-l-3xl;
+    /* background-image: linear-gradient(to right, #371d9f, #2a2187, #22226f, #1f2156, #1d1e3d, #1c1c32, #1b1b27, transparent, transparent, transparent, transparent, transparent); */
+    background-image: linear-gradient(
+      to right,
+      #371d9f,
+      #4a23af,
+      #5c29c0,
+      #6f2ed1,
+      #8234e1,
+      #7839d7,
+      #6f3ccd,
+      #673fc2,
+      #493a98,
+      #33316e,
+      #252544,
+      #19191c
+    );
+    /* background-image: linear-gradient(to right, #371d9f, #4a23af, #5c29c0, #6f2ed1, #8234e1, #7839d7, #6f3ccd, #493a98, #33316e, #252544, #19191c, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent); */
+  }
+
+  .page-root {
+    position: relative;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+    /* flex: 1 0 auto;
+    -webkit-box-flex: 1;
+    vertical-align: baseline; */
+  }
+
+  .distributive-section {
+    position: relative;
+    z-index: 0;
+    overflow: visible;
+    height: 100vh;
+    /* width: 100vh; */
+    width: 100%;
+  }
+
+  /* .distributive-section::after {
+    position: absolute;
+    z-index: -1;
+    top: -2%;
+    right: 2%;
+    opacity: 1;
+    width: 300%;
+    height: 300%;
+    content: "";
+    background: linear-gradient(90deg, #19191c, rgba(25, 25, 28, 0) 39.82%),
+      linear-gradient(174deg, #19191c 6.25%, rgba(25, 25, 28, 0) 33.45%),
+      linear-gradient(1turn, #191a1c, #191a1c 0, rgba(25, 25, 28, 0) 15.21%),
+      conic-gradient(
+        from 182.2deg at 55.19% 72.68%,
+        #19191c -97.5deg,
+        #371d9f 6.27deg,
+        #19191c 22.42deg,
+        #2a0dff 49.12deg,
+        #2a0dff 79.97deg,
+        #19191c 92.76deg,
+        #19191c 128.57deg,
+        #1e1ae8 154.67deg,
+        #253647 226.37deg,
+        #19191c 262.5deg,
+        #371d9f 366.27deg
+      );
+    background-image: linear-gradient(
+        90deg,
+        rgb(25, 25, 28),
+        rgba(25, 25, 28, 0) 39.82%
+      ),
+      linear-gradient(174deg, rgb(25, 25, 28) 6.25%, rgba(25, 25, 28, 0) 33.45%),
+      linear-gradient(
+        1turn,
+        rgb(25, 26, 28),
+        rgb(25, 26, 28) 0px,
+        rgba(25, 25, 28, 0) 15.21%
+      ),
+      conic-gradient(
+        from 182.2deg at 55.19% 72.68%,
+        rgb(25, 25, 28) -97.5deg,
+        rgb(55, 29, 159) 6.27deg,
+        rgb(25, 25, 28) 22.42deg,
+        rgb(42, 13, 255) 49.12deg,
+        rgb(42, 13, 255) 79.97deg,
+        rgb(25, 25, 28) 92.76deg,
+        rgb(25, 25, 28) 128.57deg,
+        rgb(30, 26, 232) 154.67deg,
+        rgb(37, 54, 71) 226.37deg,
+        rgb(25, 25, 28) 262.5deg,
+        rgb(55, 29, 159) 366.27deg
+      );
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  } */
+
+  .section-background {
+    position: absolute;
+    top: 0;
+    left: 55%;
+    opacity: 0.4;
+    /* width: 2032px; */
+    width: 100%;
+    height: 2300px;
+    background: linear-gradient(90deg, #19191c, rgba(25, 25, 28, 0) 20.03%),
+      linear-gradient(180deg, #19191c, rgba(25, 25, 28, 0) 18.35%),
+      linear-gradient(1turn, #191a1c, #191a1c 0, rgba(25, 25, 28, 0) 15.21%),
+      conic-gradient(
+        from 130.75deg at 50% 68.54%,
+        #9c3cf7 -75.84deg,
+        #19191c 49.36deg,
+        #191922 49.59deg,
+        #19191c 64.6deg,
+        #19191c 75.26deg,
+        #1e1ae8 101.25deg,
+        #00137c 118.94deg,
+        #6923ff 150.47deg,
+        #19191c 185.02deg,
+        #1d1aba 214.82deg,
+        #253647 226.37deg,
+        #19191c 262.5deg,
+        #9c3cf7 284.16deg,
+        #19191c 409.36deg
+      );
+    background-image: linear-gradient(
+        90deg,
+        rgb(25, 25, 28),
+        rgba(25, 25, 28, 0) 20.03%
+      ),
+      linear-gradient(rgb(25, 25, 28), rgba(25, 25, 28, 0) 18.35%),
+      linear-gradient(
+        1turn,
+        rgb(25, 26, 28),
+        rgb(25, 26, 28) 0px,
+        rgba(25, 25, 28, 0) 15.21%
+      ),
+      conic-gradient(
+        from 130.75deg at 50% 68.54%,
+        rgb(156, 60, 247) -75.84deg,
+        rgb(25, 25, 28) 49.36deg,
+        rgb(25, 25, 34) 49.59deg,
+        rgb(25, 25, 28) 64.6deg,
+        rgb(25, 25, 28) 75.26deg,
+        rgb(30, 26, 232) 101.25deg,
+        rgb(0, 19, 124) 118.94deg,
+        rgb(105, 35, 255) 150.47deg,
+        rgb(25, 25, 28) 185.02deg,
+        rgb(29, 26, 186) 214.82deg,
+        rgb(37, 54, 71) 226.37deg,
+        rgb(25, 25, 28) 262.5deg,
+        rgb(156, 60, 247) 284.16deg,
+        rgb(25, 25, 28) 409.36deg
+      );
+    background-position-x: initial, initial, initial, initial;
+    background-position-y: initial, initial, initial, initial;
+    background-size: initial, initial, initial, initial;
+    background-repeat-x: initial, initial, initial, initial;
+    background-repeat-y: initial, initial, initial, initial;
+    background-attachment: initial, initial, initial, initial;
+    background-origin: initial, initial, initial, initial;
+    background-clip: initial, initial, initial, initial;
+    background-color: initial;
+    -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    -webkit-animation-name: example;
+    animation-name: example;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+  }
+}
+
+@-webkit-keyframes example {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}
+@keyframes example {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}
