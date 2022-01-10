@@ -8,16 +8,31 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 const topics = [
-  "Business & finance",
+  // "Business & finance",
+  // "Music",
+  // "Sports",
+  // "Technology",
+  // "Gaming",
+  // "World news",
+  // "Entertainment",
+  // "Arts & culture",
+  // "Careers",
+  // "Home & family",
   "Music",
-  "Sports",
-  "Technology",
-  "Gaming",
-  "World news",
-  "Entertainment",
-  "Arts & culture",
-  "Careers",
-  "Home & family",
+  "Song",
+  "Wrestling",
+  "WWE",
+  "AEW",
+  "NFT",
+  "Crypto",
+  "Web3",
+  "Blockchain",
+  "Ethereum",
+  "Bitcoin",
+  "Chill",
+  "Black",
+  "Covid-19",
+  "Coronavirus",
 ];
 
 export default function Home() {
@@ -120,8 +135,12 @@ export default function Home() {
             <div className="w-full flex flex-row items-center mt-6 overflow-scroll">
               {topics.map((topic) => (
                 <div
-                  className="hide-scrollbar border-gray-400 rounded-full p-2 m-2 border-2 cursor-pointer hover:bg-gray-700 whitespace-nowrap text-sm"
+                  className={`hide-scrollbar border-gray-400 rounded-2xl p-2 m-2 border-2 cursor-pointer whitespace-nowrap text-sm ${topic === query ? "selectedPill" : "hover:bg-gray-700 "}`}
                   key={topic}
+                  onClick={() => {
+                    setQuery(topic);
+                    setToggle(!toggle);
+                  }}
                 >
                   {topic}
                 </div>

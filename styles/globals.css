@@ -60,6 +60,11 @@ a {
     height: 0px;
   }
 
+  .selectedPill {
+    background-color: white;
+    color: var(--dark-black);
+  }
+
   .bgDark {
     background-color: #19191c;
   }
