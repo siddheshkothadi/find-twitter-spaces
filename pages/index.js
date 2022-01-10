@@ -8,22 +8,24 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 const topics = [
-  "Business & finance",
+  "Business",
+  "NFT",
+  "Finance",
   "Music",
   "Sports",
   "Technology",
   "Gaming",
-  "World news",
+  "World",
   "Entertainment",
-  "Arts & culture",
-  "Careers",
-  "Home & family",
-  "Music",
+  "Art",
+  "Culture",
+  "Career",
+  "Home",
+  "Family",
   "Song",
   "Wrestling",
   "WWE",
   "AEW",
-  "NFT",
   "Crypto",
   "Web3",
   "Blockchain",
@@ -47,6 +49,12 @@ export default function Home() {
   const inputRef = React.useRef(null);
 
   React.useEffect(() => {
+    if(inputRef && inputRef.current) {
+      inputRef.current.focus();
+    }
+  }, []);
+
+  React.useEffect(() => {
     const handleEnterKeyPress = (e) => {
       if (e.key === 'Enter') {
         setQuery(e.target.value);
@@ -55,8 +63,6 @@ export default function Home() {
     }
 
     if(inputRef && inputRef.current) {
-      inputRef.current.focus();
-
       inputRef.current.addEventListener("keyup", handleEnterKeyPress);
     }
 
